@@ -1,0 +1,6 @@
+#To count the length of string..
+
+str = input("Enter the string to count the lenth \n")
+strlen = len(str)
+print("The lenth of the input string is:")
+print(strlen)
