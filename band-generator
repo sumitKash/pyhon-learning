@@ -1,0 +1,9 @@
+# Fun program to generate a band name.
+
+print("This program generates brand name with your input values \n")
+
+city_name = input("Which city you grew up in? \n")
+
+pet_name = input("What's the name of your pet? \n")
+
+print("You band name is: \n" + city_name + pet_name)
