@@ -1,0 +1,12 @@
+## Basic code to find ODD or EVEN number
+
+#Get user input
+number = int(input("Which number do you want to check? "))
+
+#Check remainder
+remainder = number % 2
+
+if remainder == 0:
+   print(f"The number is even number with remainder: {remainder}")
+else: 
+   print(f"The number is odd number with remainder: {remainder}") 
