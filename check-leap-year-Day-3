@@ -1,0 +1,18 @@
+## This program check Leap year by using Gregorian calendar rules
+
+year = int(input("Which year do you want to check? "))
+
+div_4 = year % 4
+div_100 = year % 100
+div_400 = year % 400 
+
+
+if div_4 == 0:
+    if div_400 == 0:
+          print("Leap year.")
+    elif div_100 != 0:
+           print("Leap year.")
+    else:
+           print("Not Leap year.")  
+else:
+    print("Not Leap year.")    
