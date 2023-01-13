@@ -1,0 +1,10 @@
+## This code uses random module from python to get the
+## random number and uses this to print Heads or Tail randomly
+import random
+
+random_int = random.randint(0,100) % 2
+
+if random_int == 0:
+    print("Heads")
+else:
+    print("Tails")  
