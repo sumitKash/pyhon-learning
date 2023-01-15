@@ -8,6 +8,7 @@ names = names_string.split(", ")
 
 # Checking the length of the string
 total_people = len(names)
+total_people -= 1
 
 print(f"total number of people in the list are:  {total_people}")
 
