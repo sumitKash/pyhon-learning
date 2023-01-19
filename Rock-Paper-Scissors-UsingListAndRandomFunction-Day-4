@@ -1,0 +1,53 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+         _______)
+        |________
+       __________)
+      (____)
+---.__(___)
+'''
+
+import random
+
+##Putting all the variable in list so that they can by called though index offset value.
+my_choice = [rock, paper, scissors]
+
+my_input = int(input("Enter you choice,  0 for rock, 1 for paper and 2 for scissors "))
+print(my_choice[(my_input)])
+
+
+##To randomize the computer options each time
+random_value = random.randint(0, 2)
+computer_choice = [rock, paper, scissors]
+print(f"computer chooses: {computer_choice[(random_value)]}")
+
+
+if my_choice[(my_input)] == computer_choice[(random_value)]:
+   print("It's a tie, try again!")
+elif (my_choice[(my_input)] == rock) and (computer_choice[(random_value)] == scissors):
+   print("You Won!")
+elif (my_choice[(my_input)] == paper) and (computer_choice[(random_value)] == rock):
+   print("You Won!")  
+elif (my_choice[(my_input)] == scissors) and (computer_choice[(random_value)] == paper):
+   print("You Won!")
+else:
+   print("Computer seems to be more intelligent, You Loose!.. Try again.")
